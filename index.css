@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+body {
+   padding-left: 100px;
+   background-image: url(bg-desktop.svg);
+   background-color: hsl(257, 40%, 49%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   min-height: 100vh;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+nav p {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+nav i {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+   
+}
+.container .right {
+    padding-left: 50px;
+}
+
+.container .right .build {
+    width: 70%;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    line-height: 1.5;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+  
+}
+.container .right .describe {
+    color: white;
+    width: 79%;
+    font-size: 20px;
+    font-family: sans-serif;
+    /* margin-left: 60px; */
+    line-height: 1.5;
+    margin-bottom: 50px;
+
+}
+.container .right .register {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    display: block;
+    width: 150px;
+    text-align: left;
+    box-shadow: 5px 5px 10px black;
+    transition: .4s ease-in;
+    
+}
+.container .right .register:hover {
+    transform: scale(1.1);
+}
+.icons {
+    position:absolute;
+    bottom: 70px;
+    right: 70px;
+    
+}
+.icons i {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(194, 192, 192);
+    padding: 12px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: .3s ease-in;
+
+
+}
+.icons i:hover {
+      box-shadow: 5px 5px 10px rgb(89, 88, 88);
+}
+.face:hover{
+    transform: scale(1.1);
+    background-color: white;
+    border: none;
+    color: blue;
+}
+.insta:hover{
+    transform: scale(1.1);
+    background-color: white;
+    border: none;
+    color:darkmagenta;
+}
+.twitter:hover{
+    transform: scale(1.1);
+    background-color: white;
+    border: none;
+    color: black;
+}
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding: 30px 20px;
+    background-image: url('bg-mobile.svg'); /* صورة الخلفية الخاصة بالموبايل */
+    background-size: contain;
+    background-position: top center;
+    text-align: center;
+  }
+
+  /* ترتيب النافبار */
+  nav {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  nav p {
+    font-size: 28px;
+  }
+
+  /* تحويل الكونتينر لعمودي (Column) */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .right .build {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .container .right .describe {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .container .right .register {
+    margin: 0 auto 50px auto;
+    width: 200px;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  /* إلغاء Absolute للأيقونات وتوسيطها في الموبايل */
+  .icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .icons i {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
