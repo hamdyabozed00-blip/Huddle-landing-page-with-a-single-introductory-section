@@ -74,10 +74,10 @@ nav i {
     border-radius: 25px;
     display: block;
     width: 150px;
-    text-align: left;
+    /* text-align: left; */
     box-shadow: 5px 5px 10px black;
     transition: .4s ease-in;
-    color:  hsl(257, 40%, 49 ) ;
+   color: hsl(257, 40%, 49%);
     
 }
 .container .right .register:hover {
