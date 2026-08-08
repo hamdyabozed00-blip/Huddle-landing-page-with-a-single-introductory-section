@@ -185,8 +185,9 @@ nav i {
   .container .right .register {
     margin: 0 auto 50px auto;
     width: 200px;
-    padding: 12px 0;
+    padding: 12px ;
     font-size: 14px;
+    text-align: center; 
   }
 
   /* إلغاء Absolute للأيقونات وتوسيطها في الموبايل */
